@@ -1,5 +1,6 @@
 import React from 'react'
-import { CATEGORIES,PRICES } from '../utils/data'
+import {PRICES } from '../utils/data'
+import VTS4 from '../assets/VTS4-scaled.jpg'
 
 export default function EventCard(props) {
 
@@ -13,7 +14,7 @@ export default function EventCard(props) {
             <h1 className='text-2xl '>{name}</h1>
             <h1 className='self-end font-semibold text-xs'>{Math.ceil(Math.random() * 30)}/{Math.ceil(Math.random()*12)}/2024</h1>
         </div>
-        <img className="rounded-xl" src="src/assets/VTS4-scaled.jpg"/>
+        <img className="rounded-xl" src={VTS4}/>
         <div className='grid grid-cols-2 gap-4'>
             <h1 className='mr-auto'>Entry Fees: <span className='font-semibold'>{PRICES[name][0] != 0 ? ` ₹${PRICES[name][0]}` : " Free"}</span></h1>
 

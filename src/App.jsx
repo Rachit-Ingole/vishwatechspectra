@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import MainBody from './components/MainBody'
 import CartPage from './components/CartPage'
+import background from './assets/Background.jpg'
 
 function App() {
   const [cart,setCart] = useState([])
@@ -35,7 +36,7 @@ function App() {
 
 
   return (
-    <main className='min-h-screen bg-fixed min-h-screen w-[100%] bg-[url("src/assets/Background.jpg")] bg-cover text-white text-sm sm:text-base'>
+    <main className={`min-h-screen bg-fixed min-h-screen w-[100%] main-body text-white text-sm sm:text-base`}>
       <Navbar/>
       {cartPage ? <CartPage cart={cart} setCart={setCart} setCartPage={setCartPage} handleCart={handleCart}/> : <MainBody cart={cart} cartPage={cartPage} setCartPage={setCartPage} handleCart={handleCart}/>}
     </main>
