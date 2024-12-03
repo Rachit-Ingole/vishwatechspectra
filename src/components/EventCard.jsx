@@ -27,14 +27,12 @@ export default function EventCard(props) {
                 </>
                 }
             </div>
-
-            <div></div>
                 
             { cart.includes(name)?
-            <div className='flex ml-auto mt-[5px] bg-red-600 p-1.5 rounded-lg mb-[8px] cursor-pointer' onClick={()=>{handleCart(name)}}>
+            <div className='flex ml-auto mt-[5px] bg-red-600 p-1.5 rounded-md mb-[8px] cursor-pointer col-span-2' onClick={()=>{handleCart(name)}}>
                 <h1>Remove from Cart</h1>
             </div> :
-            <div className='flex ml-auto mt-[5px] bg-blue-400 p-1.5 rounded-lg mb-[8px] cursor-pointer' onClick={()=>{handleCart(name)}}>
+            <div className='flex ml-auto mt-[5px] bg-blue-400 p-1.5 rounded-md mb-[8px] cursor-pointer col-span-2' onClick={()=>{handleCart(name)}}>
                 <h1>Add to Cart</h1>
             </div>}
         </div>

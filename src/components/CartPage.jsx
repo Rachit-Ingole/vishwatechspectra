@@ -15,7 +15,7 @@ export default function CartPage(props) {
     }
   return (
     <>
-    <div className='grid grid-cols-1 bg-slate-700 w-[85%] rounded-lg backdrop-blur-md bg-opacity-40 h-fit p-5 mx-auto gap-3'>
+    <div className='grid grid-cols-1 bg-slate-700 w-[85%] rounded-lg backdrop-blur-md bg-opacity-40 h-fit p-5 mx-auto gap-3 mt-[40px]'>
         <h1 className='text-lg'>Items:</h1>
         {cart.map((value,idx)=>{
             return(
@@ -34,7 +34,7 @@ export default function CartPage(props) {
     </div>
 
     <div className='flex justify-center mt-[20px] '>
-        <button className='mx-auto bg-blue-400 p-2 rounded-lg' onClick={() => {alert("Thank you for purchase");setCart([])}}>Checkout</button>
+        <button className='mx-auto bg-blue-400 p-2 rounded-lg text-lg' onClick={() => {alert("Thank you for purchase");setCart([])}}>Checkout</button>
     </div>
 
     <button className='fixed bottom-4 left-4 bg-blue-400 p-3 rounded-full text-2xl' onClick={()=>{setCartPage(false)}}><i className="fa-solid fa-arrow-left"></i></button>

@@ -9,7 +9,7 @@ export default function CategoryHeader(props) {
 
 
     return (
-    <div className='bg-slate-700 w-[100%] grid grid-cols-1 rounded-lg backdrop-blur-md bg-opacity-40 h-fit p-5' onClick={()=>{
+    <div className='bg-slate-700 w-[100%] grid grid-cols-1 rounded-lg backdrop-blur-md bg-opacity-40 h-fit p-1' onClick={()=>{
         if(!open){setOpen(!open)}
     }}>
         <div className='flex items-center w-[100%]'  onClick={()=>{
@@ -23,7 +23,7 @@ export default function CategoryHeader(props) {
 
         
         {open &&
-         <div className='mx-auto w-[90%] grid grid-cols-1 sm:grid-cols-2  justify-center mt-[20px] gap-8'> 
+         <div className='mx-auto w-[95%] grid grid-cols-1 sm:grid-cols-2  justify-center mt-[20px] gap-8'> 
             {CATEGORIES[value].map((value,idx)=>{
                 return(
                     
